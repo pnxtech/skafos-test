@@ -35,9 +35,9 @@ To tear-down the stack:
 $ cd docker-stack
 $ ./stackdown.sh
 ```
-
 The container images are stored on my PnxTech Docker Hub repository as public images.
 
+To access the local website point your web browser to: http://localhost:16000/
 
 ## Development Notes
 PnxTech is one of two GitHub repositories I own.  My cjus repo contains personal projects and PnxTech is more business oriented.
