@@ -12,6 +12,11 @@ The `source` directory includes the following subfolders:
 * ***front-end***: A ReactJS website to accept user input. The output from this site is copied into the web-service/public folder during deployement.
 * ***web-service***: NodeJS web service (using ExpressJS) which both serves the ReactJS site as well as accepts API calls from the ReactJS frontend app. Implemented APIs speak directly with the ai-service Python-based service.
 
+## Test driving the deployed project
+For easy of testing I've deployed the development stack described in this repo AWS at:
+
+
+
 ## Local testing
 In order to run this project locally, [Docker Desktop for Mac or Windows](https://www.docker.com/products/docker-desktop) is required.
 
@@ -31,6 +36,9 @@ $ cd docker-stack
 $ ./stackdown.sh
 ```
 
+The container images are stored on my PnxTech Docker Hub repository as public images.
+
+
 ## Development Notes
 PnxTech is one of two GitHub repositories I own.  My cjus repo contains personal projects and PnxTech is more business oriented.
 
@@ -39,6 +47,6 @@ Note that I built this project in between preping for other interviews and so th
 
 https://github.com/pnxtech/skafos-test/commits/master
 
-For easy of testing I've deployed the development stack described in this repo AWS at:
+
 
 
