@@ -26,3 +26,21 @@ services:
         condition: on-failure
         delay: 15s
         max_attempts: 6
+
+  web-service:
+    image: pnxtech/web-service:0.1.0
+    networks:
+      - servicenet
+    extra_hosts:
+      - "host:${HOST_IP}"
+    ports:
+      - target: 16000
+        published: 16000
+        protocol: tcp
+        mode: ingress
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 6
