@@ -1,5 +1,6 @@
 .DS_Store
 *.log
 node_modules
-config/config.json
 .vscode
+source/web-service/public/
+source/front-end/website/build/
