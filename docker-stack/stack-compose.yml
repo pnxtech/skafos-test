@@ -17,7 +17,7 @@ services:
       - "host:${HOST_IP}"
     ports:
       - target: 5000
-        published: 5000
+        published: 15000
         protocol: tcp
         mode: ingress
     deploy:
