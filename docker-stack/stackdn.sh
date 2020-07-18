@@ -5,4 +5,4 @@ sudo mv hosts.bak /etc/hosts
 docker stack rm ${STACK_NAME}
 
 echo "\nClosing services"
-./countdown.sh 5
+./countdown.sh 10
