@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.Simplecard {
+  margin: 2rem;
+  min-width: 40rem;
+  max-width: 40rem;
+}
