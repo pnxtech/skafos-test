@@ -8,6 +8,8 @@ const port = 16000;
 const serverVersion = require('./package.json').version;
 const aiServerAPIHost = 'http://0.0.0.0:15000';
 
+let stringHistory = [];
+
 app.use(express.static('public'));
 
 app.get('/v1/server/version', (_req, res) => res.json({
@@ -29,7 +31,12 @@ app.post('/v1/string/reverse', jsonParser, async (req, res) => {
     let json = req.body;
     let response = await axios.post(`${aiServerAPIHost}/v1/string/reverse`, json);
     if (response.status == 200) {
-      response.data['length'] = response.data.string.length;
+      let string = response.data.string;
+      stringHistory.push({
+        original: json.string,
+        processed: string
+      });
+      response.data['length'] = string.length;
       return res.json(response.data);
     }
     res.status(response.status).json({
@@ -44,6 +51,12 @@ app.post('/v1/string/reverse', jsonParser, async (req, res) => {
     }
     sendInvalidRequest(res);
   }
+});
+
+app.get('/v1/string/history', (req, res) => {
+  res.json({
+    history: stringHistory
+  });
 });
 
 app.listen(port, () => console.log(`Server listening at http://localhost:${port}`));

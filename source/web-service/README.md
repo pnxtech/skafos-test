@@ -14,6 +14,7 @@ The following APIs are currently supported:
 |---|---|
 | Server version | GET /v1/server/version |
 | String reverse | POST /v1/string/reverse |
+| String history | GET /v1/string/history |
 
 ## Build
 The Web Service docker image can be built using the `build.sh` shell script and passing a version number.
