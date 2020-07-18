@@ -20,7 +20,7 @@ export default class APIClient {
 
     options = Object.assign({}, defaultOptions, options);
 
-    let url = `${this.apiUrl}/${options.endpoint}?token=792abd62-eeba-4d2b-b6bf-57692ed3f7eb`;
+    let url = `${this.apiUrl}/${options.endpoint}`;
     let data = {
       headers: {
         'Accept': options.accept,
