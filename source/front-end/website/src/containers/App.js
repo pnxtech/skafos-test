@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import NavBar from '../components/NavBar'
 import APIClient from '../lib/APIClient';
+import { getStringHistory } from '../actions/StringList';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -20,8 +22,11 @@ class App extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillMount() {
+    this.props.getStringHistory();
+  }
+
   async handleSubmit(event) {
-    // console.log(`${this.state.phrase}`);
     let client = new APIClient();
     let result;
     try {
@@ -41,6 +46,8 @@ class App extends Component {
   }
 
   render() {
+    let { stringHistory } = this.props;
+    console.log('stringHistory', stringHistory);
     return (
       <div>
         <NavBar />
@@ -61,4 +68,18 @@ class App extends Component {
     )
   }
 }
-export default App
+
+const mapStateToProps = (state) => {
+  return {
+    stringHistory: state.stringList.history
+  };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getStringHistory: () => dispatch(getStringHistory())
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+
