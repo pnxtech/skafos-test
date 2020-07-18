@@ -1,7 +1,8 @@
 # website
 
 ![](website.png)
-This project was built using the [Create React App](https://github.com/facebook/create-react-app). I also installed the material design UI components for aesthetic value.
+
+This project was built using the [Create React App](https://github.com/facebook/create-react-app). I also installed the material design UI components for aesthetic value. Additionally, I added Redux for state management.
 
 Use `yarn start` to launch the website locally.
 
