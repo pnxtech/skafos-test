@@ -13,4 +13,4 @@ The displayed form allows for entering input and pressing the enter key to submi
 ![](string-processing-form.png)
 
 ## Updating the site
-After making changes to the website run the `build-site.sh` script which called yarn build (for a release build) and installed the built website into the web-service public folder.
+After making changes to the website run the `build-site.sh` script which called `yarn build` (for a release build) and install the built website into the web-service public folder.
