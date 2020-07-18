@@ -6,16 +6,14 @@ This project closely follows the Test description and project guidelines provide
 
 I've structured the project as a deployable set of docker containerized services.
 
-The `source` directory includes the following subfolders:
+The `source` directory includes the following subfolders and each contains its own documentation.
 
-* ***ai-service***: A Python Flask service exposing an API for Natural Language Processing.
-* ***front-end***: A ReactJS website to accept user input. The output from this site is copied into the web-service/public folder during deployement.
-* ***web-service***: NodeJS web service (using ExpressJS) which both serves the ReactJS site as well as accepts API calls from the ReactJS frontend app. Implemented APIs speak directly with the ai-service Python-based service.
+* [ai-service](./source/ai-service/README.md): A Python Flask service exposing an API for Natural Language Processing.
+* [front-end](./source/front-end/website/README.md): A ReactJS website to accept user input. The output from this site is copied into the web-service/public folder during deployement.
+* [web-service](./source/web-service/README.md): NodeJS web service (using ExpressJS) which both serves the ReactJS site as well as accepts API calls from the ReactJS frontend app. Implemented APIs speak directly with the ai-service Python-based service.
 
 ## Test driving the deployed project
-For easy of testing I've deployed the development stack described in this repo AWS at:
-
-
+For ease of testing I've deployed the development stack described in this repo at:
 
 ## Local testing
 In order to run this project locally, [Docker Desktop for Mac or Windows](https://www.docker.com/products/docker-desktop) is required.

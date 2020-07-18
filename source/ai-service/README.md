@@ -11,7 +11,7 @@ Additionally, this implementation uses the Flask debug server and not a producti
 
 The following APIs are currently support:
 
-| API | Usage |
+| API | Endpoint |
 |---|---|
 | Server identification | GET / |
 | Server version | GET /v1/server/version |

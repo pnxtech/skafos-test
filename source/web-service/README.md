@@ -10,7 +10,7 @@ This service is launched via the project's [docker stack](../docker-stack/README
 
 The following APIs are currently supported:
 
-| API | Usage |
+| API | Endpoint |
 |---|---|
 | Server version | GET /v1/server/version |
 | String reverse | POST /v1/string/reverse |
