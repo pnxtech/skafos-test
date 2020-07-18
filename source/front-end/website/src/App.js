@@ -6,6 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import APIClient from './utils/APIClient';
+
 import './App.css';
 
 class App extends Component {
@@ -18,9 +20,18 @@ class App extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(event) {
-    console.log(`${this.state.phrase}`);
-    event.preventDefault();
+  async handleSubmit(event) {
+    // console.log(`${this.state.phrase}`);
+    let client = new APIClient();
+    let result;
+    try {
+      result = await client.makeRequest({
+        endpoint: 'process',
+      });
+      console.log(result);
+    } catch (e) {
+      //todo handle error
+    }
   }
 
   handleChange(event) {
