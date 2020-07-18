@@ -2,5 +2,5 @@
 *.log
 node_modules
 .vscode
-source/web-service/public/
+source/web-service/public
 source/front-end/website/build/
