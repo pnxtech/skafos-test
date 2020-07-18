@@ -10,7 +10,7 @@ mkdir -p ~/data/${STACK_NAME} ~/data/${STACK_NAME}/redis ~/data/${STACK_NAME}/el
 
 sudo STACK_NAME=${STACK_NAME} HOST_IP=${HOST_IP} docker stack deploy --compose-file stack-compose.yml --with-registry-auth ${STACK_NAME}
 
-echo "\nStarting microservices 5 seconds"
+echo "\nStarting microservices 10 seconds"
 ./countdown.sh 10
 
 echo "\nopen http://localhost:16000"
