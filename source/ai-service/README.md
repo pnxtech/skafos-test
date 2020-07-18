@@ -5,7 +5,7 @@ A Python Flask service exposing an API for Natural Language Processing.
 This service is launched via the project's [docker stack](../docker-stack/README.md).
 
 I've chosen to use the `ubuntu:16.04` container image out of convenience but would likely use a lighter container in an actual production environment.
-Additionally, this implementation uses the Flask debugger server and not a production grade WSGI server.
+Additionally, this implementation uses the Flask debug server and not a production grade WSGI server.
 
 ## APIs
 
