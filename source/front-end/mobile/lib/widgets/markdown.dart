@@ -17,11 +17,11 @@ class Markdown extends StatelessWidget {
               data: snapshot.data,
               styleSheet: MD.MarkdownStyleSheet(
                 h1: TextStyle(
-//                    color: Colors.redAccent,
+                    color: Colors.blue,
                     fontSize: 40,
                     fontWeight: FontWeight.bold),
                 p: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 16,
                   fontWeight: FontWeight.w300,
                 ),
