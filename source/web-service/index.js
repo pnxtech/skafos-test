@@ -34,7 +34,8 @@ app.post('/v1/string/reverse', jsonParser, async (req, res) => {
       let string = response.data.string;
       stringHistory.push({
         original: json.string,
-        processed: string
+        processed: string,
+        length: string.length
       });
       response.data['length'] = string.length;
       return res.json(response.data);
