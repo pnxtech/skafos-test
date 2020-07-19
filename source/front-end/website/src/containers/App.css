@@ -37,8 +37,16 @@
   }
 }
 
-.Simplecard {
+.PanelCard {
   margin: 2rem;
   min-width: 40rem;
   max-width: 40rem;
+}
+
+#submit {
+  background-color: lightblue;
+}
+
+#PhraseTextField {
+  width: 35rem;
 }

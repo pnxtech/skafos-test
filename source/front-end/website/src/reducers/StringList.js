@@ -15,10 +15,8 @@ export default function stringListReducer(state = initialState, action) {
       return {...state, ...action};
     case 'SL_ADD': {
       newState = Object.assign({}, state);
-      // newState.history.push({
-      //   original: '',
-      //   processed: ''
-      // });
+      newState.history = state.history.map((x) => x);
+      newState.history.push(action.payload);
       return newState;
     }
     default:
