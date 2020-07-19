@@ -13,8 +13,6 @@ services:
     image: pnxtech/ai-service:0.1.0
     networks:
       - servicenet
-    extra_hosts:
-      - "host:${HOST_IP}"
     ports:
       - target: 15000
         published: 15000
@@ -31,10 +29,6 @@ services:
     image: pnxtech/web-service:0.1.0
     networks:
       - servicenet
-    extra_hosts:
-      - "host:${HOST_IP}"
-    volumes: # TODO: remove this debugging volume when deploying to production
-      - /Users/cjus/dev/pnxtech/skafos-test/source/front-end/website/build:/usr/src/app/public
     ports:
       - target: 16000
         published: 16000
