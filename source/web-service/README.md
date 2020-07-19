@@ -28,4 +28,9 @@ The service RESTfull APIs can be tested using the shell scripts found in the `te
 
 The `tests` folder includes a basic set of tests - for both success and failure suituations. The test coverage is by no means comprehensive at this time.
 
+## Improvement Notes
+Given additional time or on an actual production project I would do the following:
+
+- [ ] Use a microservices library such as [Hydra](https://www.npmjs.com/package/hydra) to create true microservices rather than a simple ExpressJS site.
+- [ ] Decouple the ReactJS site from within the web service container and pull files from a CDN instead.
 

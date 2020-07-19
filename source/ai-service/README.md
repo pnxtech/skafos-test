@@ -29,4 +29,8 @@ The AI Service RESTfull APIs can be tested using the shell scripts found in the 
 
 The `tests` folder includes a basic set of tests - for both success and failure suituations. The test coverage is by no means comprehensive at this time.
 
+## Improvement Notes
+Given additional time or on an actual production project I would do the following:
+- [ ] Seven years ago I had the pleasure of working with the Python Natural langugage toolkit.  I wrote a service called PostAnalyzer for performing analysis of user provided posts.  It would have been fun to intergrate PostAnalyzer into this test AI Service.  The code for PostAnalyzer is available [here](https://github.com/cjus/postanalyzer) on my github account.
+
 
