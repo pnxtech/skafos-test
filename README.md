@@ -25,7 +25,8 @@ The two docker images are publically host on my PnxTech Docker Hub account:
 The `source` directory includes the following subfolders and each contains its own documentation.
 
 * [ai-service](./source/ai-service/README.md): A Python Flask service exposing an API for Natural Language Processing.
-* [front-end](./source/front-end/): A ReactJS website to accept user input. The output from this site is copied into the web-service/public folder during deployement. Also a Mobile app for extra credit.
+* [front-end](./source/front-end/): A ReactJS website to accept user input. The output from this site is copied into the web-service/public folder during deployement.
+  * Also a Mobile app for extra credit.
 * [web-service](./source/web-service/README.md): NodeJS web service (using ExpressJS) which both serves the ReactJS site as well as accepts API calls from the ReactJS frontend app. Implemented APIs speak directly with the ai-service Python-based service.
 
 ## Test driving the deployed project
