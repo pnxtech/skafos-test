@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 LABEL maintainer="Carlos Justiniano cjus@ieee.org"
-EXPOSE 5000
+EXPOSE 15000
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev

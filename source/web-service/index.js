@@ -6,7 +6,7 @@ const axios = require('axios');
 
 const port = 16000;
 const serverVersion = require('./package.json').version;
-const aiServerAPIHost = 'http://0.0.0.0:15000';
+const aiServerAPIHost = 'http://host:15000';
 
 let stringHistory = [];
 

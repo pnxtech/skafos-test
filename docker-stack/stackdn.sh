@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 export STACK_NAME='skafos'
 sudo sed '/[[:space:]]host/d' /etc/hosts > hosts.bak
 sudo mv hosts.bak /etc/hosts
