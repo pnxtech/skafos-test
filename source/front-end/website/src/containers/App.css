@@ -50,3 +50,7 @@
 #PhraseTextField {
   width: 35rem;
 }
+
+#NumberBadge {
+  margin-top: 1.5rem;
+}

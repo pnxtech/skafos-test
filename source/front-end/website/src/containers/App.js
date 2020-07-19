@@ -12,6 +12,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Badge from '@material-ui/core/Badge';
 import './App.css';
 
 class App extends Component {
@@ -47,8 +48,8 @@ class App extends Component {
           <ListItemText
             key={cindex++}
             primary={item.original}
-            secondary={item.processed}
-          />
+            secondary={item.processed} />
+          <Badge id="NumberBadge" key={cindex++} badgeContent={item.length} color="primary"/>
         </ListItem>
         <Divider key={cindex++} component="li" />
       </div>
