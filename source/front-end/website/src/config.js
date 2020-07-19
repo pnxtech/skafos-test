@@ -4,9 +4,9 @@ const config = {
   environment: 'dev',
   apiServer: {
     version: 'v1',
-    targetServer:  'http://localhost:16000',
-    targetLocalServer:  'http://localhost:16000',
-    targetServerRemote: ''
+    targetServer:  'http://pnxtech.com:16000',
+    targetLocalServer:  'http://pnxtech.com:16000',
+    targetServerRemote: 'http://localhost:16000'
   }
 };
 
