@@ -12,8 +12,8 @@ const NavBar = () => {
         <Toolbar>
           <img src={logo} alt="" />
           <Typography variant="h4" color="inherit">
-            Skafos.ai Front-end Test Application
-                </Typography>
+            Test Application
+          </Typography>
         </Toolbar>
       </AppBar>
     </div>

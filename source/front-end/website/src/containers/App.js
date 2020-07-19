@@ -61,7 +61,7 @@ class App extends Component {
         <Card className="PanelCard">
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              String processing demo
+              String processing
             </Typography>
             <form className="form" onSubmit={this.handleSubmit}>
               <TextField id="PhraseTextField" label="enter string to process" value={this.state.phrase} onChange={this.handleChange} />
