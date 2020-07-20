@@ -27,6 +27,9 @@ class App extends Component {
   }
 
   async handleSubmit(event) {
+    if (this.state.phrase === '') {
+      return;
+    }
     this.props.submitString(this.state.phrase);
     this.setState({
       phrase: ''
