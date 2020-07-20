@@ -24,6 +24,13 @@ The webpage can be refreshed and restarted without impacting the job history bec
 ## Updating the site
 After making changes to the website run the `build-site.sh` script which calls `yarn build` (for a release build) and installs the packaged website into the web-service public folder.
 
+## Debugging using Redux DevTools
+The site can be debugged using Redux DevTools:
+
+![](redux-devtools.png)
+
+> Note: for dev team review I've left this feature enabled but naturally it would be turned off in a production deployment.
+
 ## Improvement Notes
 Given additional time or on an actual production project I would do the following:
 
