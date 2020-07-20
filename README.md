@@ -67,7 +67,11 @@ The container images are stored on my PnxTech Docker Hub repository as public im
 To access the local website point your web browser to: http://localhost:16000/
 
 ## Extra credit
-After completing this project I decided to build a mobile app and short video walk through.
+After completing this project I decided to build a mobile app.
+
+<img src="source/front-end/mobile/screen3.png" width="400px" />
+
+The code for this app is included in the [front-end](./source/front-end/) folder.
 
 ## Development Notes
 To see how this project came together see the github commit history.
