@@ -6,7 +6,7 @@ Skafos Engineering Leadership Assessment and Test Project
 ## Project overview
 This project closely follows the test description and project guidelines provided by [Ian](https://github.com/ianterrell) with the exception that I've chosen to use NodeJS/Express rather than Ruby/Rails due to my familiarity with the Node and JS stack.
 
-My goal is completing this project has been to share my experiences with the following technologies:
+My goal in completing this project has been to share my experiences with the following technologies:
 
 * Containerized cloud-hosted microservices.
 * Front-end web development involving HTML, CSS, JavaScript, ReactJS, Redux and Material Design.
