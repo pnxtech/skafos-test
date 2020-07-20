@@ -11,9 +11,8 @@ The app will build from source on a machine setup with the Flutter SDK and Andro
 
 ## Emulator screen captures
 
-![](screen1.png)
-![](screen2.png)
-![](screen3.png)
-
+<img src="screen1.png" width="400px" />
+<img src="screen2.png" width="400px" />
+<img src="screen3.png" width="400px" />
 
 
