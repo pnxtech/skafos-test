@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 COUNTER=$1
 while [ $COUNTER -gt 1 ]; do
   let COUNTER=COUNTER-1
