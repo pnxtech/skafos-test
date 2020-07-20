@@ -7,7 +7,7 @@ Like the ReactJS website this project uses both async/await and Google's Materia
 However, unlike the ReactJS site, this simple app doesn't maintain state by efficiently adding to an internal store.
 
 ## Trying the app
-The app will build from source on a machine setup with the Flutter SDK and Android Studio.  However, I've added an android .APK file here.
+The app will build from source on a machine setup with the Flutter SDK and Android Studio.  However, I've added an Android `app.apk` file in this project root.
 
 ## Emulator screen captures
 
