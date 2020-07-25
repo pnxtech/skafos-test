@@ -10,7 +10,7 @@ networks:
 
 services:
   ai-service:
-    image: pnxtech/ai-service:0.1.0
+    image: pnxtech/ai-service:0.1.1
     networks:
       - servicenet
     extra_hosts:
@@ -28,7 +28,7 @@ services:
         max_attempts: 6
 
   web-service:
-    image: pnxtech/web-service:0.1.0
+    image: pnxtech/web-service:0.1.5
     networks:
       - servicenet
     extra_hosts:

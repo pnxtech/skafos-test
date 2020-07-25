@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, make_response
 
 app = Flask(__name__)
-server_version = '0.1.0'
+server_version = '0.1.1'
 
 @app.route('/', methods=['GET'])
 def home():
@@ -13,18 +13,19 @@ def version():
 
 @app.route('/v1/string/reverse', methods=['POST'])
 def reverse():
-  if request.is_json:
+  try:
     req = request.get_json()
     response = {
       "string": reverse_string(req.get('string'))
     }
     res = make_response(jsonify(response), 200)
     return res
-  else:
+  except:
     response = {
-      "error": "missing string field"
+      "error": "invalid json or missing string field"
     }
     res = make_response(jsonify(response), 400)
+  return res
 
 def reverse_string(s):
   return s[::-1]
