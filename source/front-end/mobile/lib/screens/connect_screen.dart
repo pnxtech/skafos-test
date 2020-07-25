@@ -32,7 +32,7 @@ class _ConnectScreenState extends State<ConnectScreen> {
   }
 
   void sendString() async {
-    await http.post(
+    final http.Response response = await http.post(
       '$kAPIServer/v1/string/reverse',
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
@@ -41,6 +41,11 @@ class _ConnectScreenState extends State<ConnectScreen> {
         'string': inputController.text,
       }),
     );
+    if (response.statusCode == 200) {
+      print(response.body);
+    } else {
+      print(response.toString());
+    }
     inputController.clear();
     getInfo(); // not the most optimal approach - but probably fine for a POC / demo
   }
