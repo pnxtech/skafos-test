@@ -21,7 +21,7 @@ My goal in completing this project has been to share my experiences with the fol
 * Documentation authoring as illustrated in this repo.
 
 I've structured this project as a deployable set of docker containerized services.  However, a live version is available at:
-http://pnxtech.com:16000
+~~http://pnxtech.com:16000~~
 
 The complete application is deployed on AWS as shown in this next diagram:
 
